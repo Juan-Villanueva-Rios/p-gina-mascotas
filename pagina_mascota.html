@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-high": "#dee8ff", "on-tertiary-fixed": "#0b2000", "secondary": "#a83900", "surface-bright": "#f9f9ff", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#ffb59a", "tertiary-container": "#304c1b", "primary-fixed": "#baeed9", "on-error-container": "#93000a", "surface-container-highest": "#d8e3fb", "on-error": "#ffffff", "primary-fixed-dim": "#9ed1bd", "on-secondary": "#ffffff", "primary-container": "#1b4d3e", "background": "#f9f9ff", "surface-container-low": "#f0f3ff", "secondary-container": "#fc6018", "tertiary-fixed": "#caedab", "tertiary": "#1a3506", "error-container": "#ffdad6", "error": "#ba1a1a", "on-surface": "#111c2d", "surface": "#f9f9ff", "outline-variant": "#c0c9c3", "inverse-surface": "#263143", "outline": "#707974", "inverse-on-surface": "#ecf1ff", "on-secondary-fixed": "#380d00", "on-primary": "#ffffff", "on-background": "#111c2d", "secondary-fixed": "#ffdbcf", "on-tertiary-fixed-variant": "#324e1d", "surface-tint": "#376757", "surface-variant": "#d8e3fb", "primary": "#003629", "on-surface-variant": "#404945", "on-secondary-container": "#531800", "on-secondary-fixed-variant": "#802a00", "inverse-primary": "#9ed1bd", "surface-container-lowest": "#ffffff", "tertiary-fixed-dim": "#afd192", "surface-container": "#e7eeff", "on-primary-fixed-variant": "#1d4f40", "on-primary-fixed": "#002117", "on-tertiary-container": "#9bbc7f", "on-primary-container": "#8abda9", "surface-dim": "#cfdaf2" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "space-lg": "1rem", "space-md": "0.75rem", "margin": "1rem" }, fontFamily: { "label-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "price-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "price-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"] }, fontSize: { "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700" }], "price-sm": ["14px", { "lineHeight": "18px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "price-lg": ["20px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 px-margin flex flex-col justify-between py-space-sm"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Huellitas Market Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpUZOsyaICnZNqlnSYkYn1VBnkNnDf2k3Grrr8T1-M3DHQYeAcWDY4Lbo-tJffhcxPSi27SkAgQxK28tz1uE-Cur0qawl0YivC3lpJlAE41FCRyc4PWTKutMK71dUEvydiDTAU0ILco42f69n7Lbv07nICCErn-Dtos3RJ3eqmhfd1Ca8TZG4KSgxcLy3orqu71KiS2qhE-Ja-6HnSsUew1EdER226mSM9-E9wqhnsgLHPB6WNeP4"/><div class="flex flex-col"><span class="font-label-md text-label-md text-primary font-bold leading-tight">Huellitas Market</span><span class="font-label-sm text-label-sm text-on-surface-variant">Combos Y Ofertas</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Buscar" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Notificaciones" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary relative transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_2px_6px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4hrjXY6r3e93d-JaNghKMPHJkMS3DGJcoVar3qNdwgdUsPfAZJI2vlDo5PxeH702Q7MhavluSUgBO_oqqkhHiCj1iEo60a3skaXh7t89w5_l-PBf3nRM6Y9Q0IzcO404KAR16BRCU9zTQoQ54HyLb89PIhuGKRrdd7LnCRuXWnxubJiOdAPmYrtT0JkdmMXbAX1eY1GskXKhGUmmmJHqXTilWsxZqQPyVuep5d03f2vq78TwNzLs"/></div></div></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-full max-w-full"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">location_on</span><span class="font-body-sm text-body-sm text-on-surface truncate">Entregar en: <strong class="font-label-sm text-label-sm text-on-surface">Av. Las Palmas 240</strong></span><span class="material-symbols-outlined text-outline text-[16px] ml-auto shrink-0">expand_more</span></div></div></header><main class="flex flex-col relative w-full pt-28 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-xl space-y-space-xl">
+<!-- Countdown Flash Promo Banner -->
+<section class="bg-primary text-on-primary rounded-xl p-space-md shadow-md flex items-center justify-between gap-space-sm overflow-hidden relative">
+<div class="flex items-center gap-space-sm z-10">
+<div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0 shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Ofertas Relámpago</span>
+<span class="font-label-lg text-label-lg font-bold leading-tight">Fin de semana especial</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-primary-container px-space-md py-space-xs rounded-full z-10 shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[16px]">timer</span>
+<span class="font-label-sm text-label-sm font-bold text-on-primary tabular-nums" id="countdown-timer">14h 32m 05s</span>
+</div>
+</section>
+<!-- Header Title Section -->
+<header class="flex flex-col space-y-space-xs">
+<div class="inline-flex items-center gap-space-xs text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Aprobado por especialistas</span>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-on-surface font-extrabold tracking-tight">
+      Súper Combos &amp; Ahorro 🏷️
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-snug">
+      Paquetes pensados por veterinarios y nutricionistas con descuentos de hasta el 40%.
+    </p>
+</header>
+<!-- Filter Pills (Interactive Categories) -->
+<nav aria-label="Categorías de combos" class="flex gap-space-sm overflow-x-auto no-scrollbar py-space-xs -mx-margin px-margin">
+<button class="filter-btn active flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md shrink-0 transition-colors shadow-sm" data-category="all" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Todos los combos</span>
+</button>
+<button class="filter-btn flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 hover:bg-surface-container-high transition-colors" data-category="perros" type="button">
+<span class="material-symbols-outlined text-[16px]">pets</span>
+<span>Combos Perros</span>
+</button>
+<button class="filter-btn flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 hover:bg-surface-container-high transition-colors" data-category="gatos" type="button">
+<span class="material-symbols-outlined text-[16px]">cruelty_free</span>
+<span>Combos Gatos</span>
+</button>
+<button class="filter-btn flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 hover:bg-surface-container-high transition-colors" data-category="otros" type="button">
+<span class="material-symbols-outlined text-[16px]">phishing</span>
+<span>Aves &amp; Peces</span>
+</button>
+<button class="filter-btn flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 hover:bg-surface-container-high transition-colors" data-category="snacks" type="button">
+<span class="material-symbols-outlined text-[16px]">local_pizza</span>
+<span>2x1 Snacks</span>
+</button>
+</nav>
+<!-- Combos Grid / Stack -->
+<main class="flex flex-col space-y-space-lg" id="combos-container">
+<!-- Tarjeta 1: Canino -->
+<article class="combo-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col space-y-space-md relative overflow-hidden" data-category="perros">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col space-y-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">health_and_safety</span>
+            Prescripción Veterinaria
+          </span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight">
+            Combo Cuidado Digestivo Canino
+          </h2>
+</div>
+<div class="flex flex-col items-end">
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold px-space-sm py-0.5 rounded-full shadow-xs">
+            27% OFF
+          </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-1">Ahorras $24.10</span>
+</div>
+</div>
+<!-- Pack Miniatures Showcase -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col space-y-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Incluye 3 productos completos:</span>
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="flex flex-col items-center bg-surface-container-lowest p-space-xs rounded-lg text-center shadow-xs">
+<img class="w-14 h-14 object-contain rounded mb-1" data-alt="High quality dog food packaging Hill's Prescription Diet i/d digestive care, crisp white background studio lighting, warm natural green palette, pet store luxury aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4aOiemdqAHLcrmjr4OK8ORfQktUHiEh6JUcGomULxuyZz9dbyHahKYkD6PhBXFH-J20W6UitDWSz_JurSWZjUXjod3pYDDGO27s95R3aQzkjL9W7LziTI6K60jhFj_1Fhn7XPUkEnPYNpbavPPzT6NmSJGrwtM-MGTTRGOKcgZz3bJBt8qTIEmD_aPrSryD-h-rrvQnI_x97NZQxum_d6WWHmF-bIYf8ilLqTCQkhq3FYsz8F8Go"/>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface font-semibold line-clamp-2">Hill's i/d 8kg</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-lowest p-space-xs rounded-lg text-center shadow-xs">
+<img class="w-14 h-14 object-contain rounded mb-1" data-alt="Wet canned food for dogs medical gastrointestinal formula, studio lighting, golden accents, clean pet nutrition product shot on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYL_uqbCuxcifmuEa_gqZg4NP3XV-GGSr0j-uaNBHZP3grd4XB43JSFQV-sglRNhwcaLc7TXKlT4vOllcjoaJxfuYlmprzjx5vh6Jw5xcHaRgR9NObsuFXCGsHsdqJUMP4evtoPWm8atHdQAQGCspS1lzJiLnBT7qUraHSkvom847Y6m_nvOqQVAV83OyBD13ydHhPs-_avLRoXrsICF3VOWq3kRrc4fbjeIPUKXKTSw9WsFnco6U"/>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface font-semibold line-clamp-2">4x Latas Gastro</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-lowest p-space-xs rounded-lg text-center shadow-xs">
+<img class="w-14 h-14 object-contain rounded mb-1" data-alt="FortiFlora canine veterinary probiotic supplement box sachet, pet health wellness product on crisp light background, professional studio photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7rkH2r2ai1amGvNakMrH0WEcaOONDAkmVKvojfvN16DOppgu7D7OXH0S5Q8NKrMFDslIIbHqKMCNz3e5ztbCyKFWMMsCMXi4gU7y_oLDhRenMc1qynNRs6lKLuxty7vkGt6jW4FcTzOVlDGZO3SJc3HdyMuzPAxXIO9QhoivfTffLgc0GsI905wu5nFen7gWPbJT9F_sUe_D55KSUY8Apdy4Y6_rPM43tvvq2GU2Lk6GOm0GYNAs"/>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface font-semibold line-clamp-2">FortiFlora Pack</span>
+</div>
+</div>
+</div>
+<!-- Pricing & Actions -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-outline line-through leading-none">$89.00</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-price-lg text-price-lg text-primary font-extrabold">$64.90</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant font-medium">/ pack</span>
+</div>
+</div>
+<button class="add-cart-btn flex items-center justify-center gap-space-xs bg-primary text-on-primary hover:bg-primary-container px-space-lg py-space-sm rounded-xl font-label-lg text-label-lg font-bold transition-all shadow-md active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Agregar Combo</span>
+</button>
+</div>
+</article>
+<!-- Tarjeta 2: Felino -->
+<article class="combo-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col space-y-space-md relative overflow-hidden" data-category="gatos">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col space-y-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+            Bienestar &amp; Confort
+          </span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight">
+            Pack Felino Total Esterilizados
+          </h2>
+</div>
+<div class="flex flex-col items-end">
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold px-space-sm py-0.5 rounded-full shadow-xs">
+            25% OFF
+          </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-1">Ahorras $15.50</span>
+</div>
+</div>
+<!-- Pack Miniatures Showcase -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col space-y-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Incluye 3 esenciales felinos:</span>
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="flex flex-col items-center bg-surface-container-lowest p-space-xs rounded-lg text-center shadow-xs">
+<img class="w-14 h-14 object-contain rounded mb-1" data-alt="Purina Pro Plan Sterilized premium dry cat food packaging bag 7kg, bright studio lighting, rich emerald tones, pet food e-commerce product photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsk6GfBZCrsJFWrXMSNKO03hV4zQu1rcQtHrzyq8vjI2Td70f7bIJdK-hqHNMm3iuWoszHzxTlg0mwJFGdytRfdZbR7b_fZ6FllWRB58Gj_AQhelCrAkG4xwf8OES1jn6kK-Daf9SEXOj9IA8g2dYIRpZBwxmZy8C877XJxvLL4n_toYo4x9aHdljYA_-57H6IVJdkgADRYN-LB5sVK4UWHDTFH8HZUHrLneaaD0FRhtXTK8Ozimg"/>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface font-semibold line-clamp-2">Pro Plan 7kg</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-lowest p-space-xs rounded-lg text-center shadow-xs">
+<img class="w-14 h-14 object-contain rounded mb-1" data-alt="Clumping cat litter premium clean bentonite bag 10kg, minimalist pet accessories studio shot on neutral light surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6H0GbJzCmi4Fwb3qCzYCw7DwdoVPKzeAIhaM0MBj_Vm9HU-FQjfoSO77hJd9CE027H88xIQ5ki0gw2mkNR_c9KsB2bJywAaoyv9wjoC5BjvIXO_g9ogyIJqtx3HpVJGBmFjOiVnUHYHkGgHUQ0nfpiwDL5wQ-V9iZkwv5PNvuU8HMUsOELu17UdlGItQbp0EgfG1VcQYCSdP2BYYntwXkbKKVtFV2dE7EJUI-IaUeqYrNebQ_TGQ"/>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface font-semibold line-clamp-2">Arena Aglom. 10kg</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-lowest p-space-xs rounded-lg text-center shadow-xs">
+<img class="w-14 h-14 object-contain rounded mb-1" data-alt="Cat treats crunchy pockets Catisfactions snack pouches stack, vibrant playful pet snack product photography on clean bright surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACv8YrPgNHiEvP2RE7AbbLmRWXSbkNoW-5ncogbk7iPfhP-07BCGRJ52P2ommDLqqgCzqAoUNTRcyPSSU3YE_dm34BM54hDQwLHrLuxQMuTqfsCvk2laRbf0kkDZ4ra4gBd9Nptm4gm4SzYff0GL2D4DA_a_-D6GdJPy0erVfye2GEFczEeeqVURDgjIH2vmK46q2jena9UdNWVmkN_kTx8tA6vHY6S0MSSW74l3kNp2hRYJhCBBU"/>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface font-semibold line-clamp-2">5x Catisfactions</span>
+</div>
+</div>
+</div>
+<!-- Pricing & Actions -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-outline line-through leading-none">$62.00</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-price-lg text-price-lg text-primary font-extrabold">$46.50</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant font-medium">/ pack</span>
+</div>
+</div>
+<button class="add-cart-btn flex items-center justify-center gap-space-xs bg-primary text-on-primary hover:bg-primary-container px-space-lg py-space-sm rounded-xl font-label-lg text-label-lg font-bold transition-all shadow-md active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Agregar Combo</span>
+</button>
+</div>
+</article>
+<!-- Tarjeta 3: Peces Tropicales -->
+<article class="combo-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col space-y-space-md relative overflow-hidden" data-category="otros">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col space-y-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">water_drop</span>
+            Acuario Saludable
+          </span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight">
+            Combo Acuario Completo Peces Tropicales
+          </h2>
+</div>
+<div class="flex flex-col items-end">
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold px-space-sm py-0.5 rounded-full shadow-xs">
+            30% OFF
+          </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-1">Ahorras $8.10</span>
+</div>
+</div>
+<!-- Pack Miniatures Showcase -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col space-y-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Incluye 3 productos de mantenimiento:</span>
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="flex flex-col items-center bg-surface-container-lowest p-space-xs rounded-lg text-center shadow-xs">
+<img class="w-14 h-14 object-contain rounded mb-1" data-alt="TetraMin flakes tropical fish food canister bottle yellow cap, aquatic life product e-commerce photography on clean studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiU4VOBKswRtQHZeGlL2Py1PuVqNzuklBs748BptOo6AXdvM1F0z-F0J-DhaQBRL00SpHlkDUaJpsL8Uty5hCJQRE8pzyWWDdjaDqccbINJtb00OiNEum9U7jp_J8TejsPNQQsMw4hxeBfQOZDWaZaSCqWwjEFfur5-WemrZJR5_KhAG6leUYGA1YUNpo4sUx9YeOGqSHpnThGC7slO8ulDLjSCB4L_2D67Hj86ktv31RKQQfUMmE"/>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface font-semibold line-clamp-2">TetraMin 200ml</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-lowest p-space-xs rounded-lg text-center shadow-xs">
+<img class="w-14 h-14 object-contain rounded mb-1" data-alt="Tetra AquaSafe aquarium water conditioner blue bottle, aquarium water care product on white illuminated surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTZvsDH9e6DZr20CKwEDaFeWpJ3p662bM4oFQ_6HhUxujrw8zvQpfOyaukRjhvjZBF5iyr0ml9CzO8JBY-qT5CJAPA_8PBe-HYEQvQwBPwQ-Ii93FXVLQnV8zbOQDcblrADPP7Ux3gLQ2pKo3qSCPQOQGMire6r52mj3Smfoc8XZx4hTIvcjAvqhUAAu5KAMgE47B14hEy4eL3V2MLME-_I_NGT40DpskvH9YK8KH91V66UDyEoBw"/>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface font-semibold line-clamp-2">AquaSafe 100ml</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-lowest p-space-xs rounded-lg text-center shadow-xs">
+<img class="w-14 h-14 object-contain rounded mb-1" data-alt="Slow release fish food holiday feeding block for aquarium, studio product shot clean sharp lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi43Xms_sF8ZcQIVETcZs4c7-IUbJ9THkbBUoeBRYaPvdUGwP6uff9hWKTF-uRmDRGjdYorh8k96kkYYUOG2f5aLtPN6p0TIYRxBOfpo0Z3v6GZm2oTULjyIStySqHeVsMEvAAdC7X0VsXbykW3xhT7vUukBqk1H_FJsWl3nAO3GW1Rwt_1omRnfQ4ysLjK6AUnUXd3BIZOI7VdT5m5Qol-vJ0CoxYqyxLsnyfu6yrmXajKW2x4_g"/>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface font-semibold line-clamp-2">Bloque Vacaciones</span>
+</div>
+</div>
+</div>
+<!-- Pricing & Actions -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-outline line-through leading-none">$28.00</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-price-lg text-price-lg text-primary font-extrabold">$19.90</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant font-medium">/ pack</span>
+</div>
+</div>
+<button class="add-cart-btn flex items-center justify-center gap-space-xs bg-primary text-on-primary hover:bg-primary-container px-space-lg py-space-sm rounded-xl font-label-lg text-label-lg font-bold transition-all shadow-md active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Agregar Combo</span>
+</button>
+</div>
+</article>
+<!-- Tarjeta 4: Aves & Loros -->
+<article class="combo-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col space-y-space-md relative overflow-hidden" data-category="otros">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col space-y-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">yard</span>
+            100% Granos Naturales
+          </span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight">
+            Combo Nutrición Aves &amp; Loros
+          </h2>
+</div>
+<div class="flex flex-col items-end">
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold px-space-sm py-0.5 rounded-full shadow-xs">
+            25% OFF
+          </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-1">Ahorras $5.00</span>
+</div>
+</div>
+<!-- Pack Miniatures Showcase -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col space-y-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Incluye 3 componentes clave:</span>
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="flex flex-col items-center bg-surface-container-lowest p-space-xs rounded-lg text-center shadow-xs">
+<img class="w-14 h-14 object-contain rounded mb-1" data-alt="Versele-Laga premium bird seeds mix packet for parrots and exotic birds, seed mix nutrition packaging on bright neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-PVNS4ui_7DCuiO2jMV_LbHdYatOvCAG00NNP_DQC0o3rVdaEvCXf1MBi_grUudv43wxo2-b2E2QGp9BEbivnFYeriAaKsAh-6yuIN2vkL7k1FpkoE-CskGfVoBGeE1k4rACZfjgOwT4VgIIEy7Wxf3b3So-OjtES770t8mjhW7djO32q2llwaeOrs8KO1oZxu4bq0Jr2K0-gqnGIwbtGt3KSf2abpuBUx7uByRh3t5AIKDYEl8k"/>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface font-semibold line-clamp-2">Mixtura 1kg</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-lowest p-space-xs rounded-lg text-center shadow-xs">
+<img class="w-14 h-14 object-contain rounded mb-1" data-alt="Hanging seed treat sticks with dried fruits for birds and parakeets, natural pet treat photograph high quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWn5_FwgEmtebXk6BuUehiR0DCwun7MZ3CKd1932aD9kfbI2ZE5oI_YLA-lBH1FOXKa-opAL-7l3pWQWDKp4KzHPeeVggz3EU8X4is5tFoGZOkEVfrMKIwoMH-6je8CndY6KM2W_I-wVP9InSSCPwJsMXlXXOTztI-Mb6UnHTtTibFOA-dW3E_tBqL2SC1IAW4cxHL_GrKXNjYE8bEC0L0pssfexbjmMLAxVQ52smnSMzRSIEA23s"/>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface font-semibold line-clamp-2">Barritas Fruta</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-lowest p-space-xs rounded-lg text-center shadow-xs">
+<img class="w-14 h-14 object-contain rounded mb-1" data-alt="Natural cuttlefish calcium mineral block for cage birds, pet care natural stone shot on clean surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE5hcuwgi0ft2yi40gyZaTa8Ml1o3Gw4xM-stKqTCp-9J0RLrczHaAdnZY6NwSh7KRerJ-d01GP1zq1hmrU3EUhSqOfjh7KCyk4fPH3-32_wkW-OQVmCNc9q59ZvioIJN8wOOK1Qm7v8gB7mNRAfphDiT6V2gesSYqi9WWQ6zZ-Q-7sxutkegxQTpNRvKwPuOQxr8g_wOlPM9zuoBJCeZxmR1LY6OudXiCvukRlH6jI4LA9Q59f9U"/>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface font-semibold line-clamp-2">Bloque Calcio</span>
+</div>
+</div>
+</div>
+<!-- Pricing & Actions -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-outline line-through leading-none">$18.50</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-price-lg text-price-lg text-primary font-extrabold">$13.50</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant font-medium">/ pack</span>
+</div>
+</div>
+<button class="add-cart-btn flex items-center justify-center gap-space-xs bg-primary text-on-primary hover:bg-primary-container px-space-lg py-space-sm rounded-xl font-label-lg text-label-lg font-bold transition-all shadow-md active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Agregar Combo</span>
+</button>
+</div>
+</article>
+</main>
+<!-- Value Props / Reassurance Footnote -->
+<section class="bg-surface-container-low rounded-xl p-space-lg flex flex-col space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Envío Gratis en todos los Combos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Llegan en menos de 2 horas a tu puerta en Lima metropolitana</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">eco</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Garantía de Frescura Sellada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Empacados al vacío y con fecha de caducidad certificada</span>
+</div>
+</div>
+</section>
+<!-- Interactive Toast Notification when adding combos -->
+<aside class="fixed bottom-20 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-space-lg py-space-sm rounded-full shadow-xl flex items-center gap-space-sm transition-all duration-300 opacity-0 pointer-events-none translate-y-4 z-50" id="toast-cart">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-label-md font-bold">¡Combo añadido al carrito!</span>
+</aside>
+</div>
+<script>
+  // Countdown Timer Simulation
+  (function initCountdown() {
+    let totalSeconds = 14 * 3600 + 32 * 60 + 5;
+    const timerEl = document.getElementById('countdown-timer');
+    if (!timerEl) return;
+
+    setInterval(() => {
+      if (totalSeconds <= 0) return;
+      totalSeconds--;
+      const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+      const mins = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+      const secs = String(totalSeconds % 60).padStart(2, '0');
+      timerEl.textContent = `${hours}h ${mins}m ${secs}s`;
+    }, 1000);
+  })();
+
+  // Filter Pills micro-interaction
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const comboCards = document.querySelectorAll('.combo-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        b.classList.add('bg-surface-container', 'text-on-surface-variant');
+        const icon = b.querySelector('.material-symbols-outlined');
+        if (icon && icon.textContent === 'check') {
+          icon.style.display = 'none';
+        }
+      });
+
+      btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+      const targetCategory = btn.dataset.category;
+
+      comboCards.forEach(card => {
+        if (targetCategory === 'all' || card.dataset.category === targetCategory) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Add to cart toast trigger
+  const cartButtons = document.querySelectorAll('.add-cart-btn');
+  const toast = document.getElementById('toast-cart');
+
+  cartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Toggle button text momentarily for tactile delight
+      const originalHTML = button.innerHTML;
+      button.innerHTML = `<span class="material-symbols-outlined text-[18px]">check</span><span>¡Agregado!</span>`;
+      button.classList.add('bg-tertiary');
+
+      // Show toast
+      if (toast) {
+        toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+        toast.classList.add('opacity-100', 'translate-y-0');
+
+        setTimeout(() => {
+          toast.classList.remove('opacity-100', 'translate-y-0');
+          toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+          button.innerHTML = originalHTML;
+          button.classList.remove('bg-tertiary');
+        }, 2200);
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(27,77,62,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors group" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Inicio</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors group" data-path="catalogo" href="#"><span class="material-symbols-outlined text-[22px]">pets</span><span class="font-label-sm text-label-sm mt-0.5">Catálogo</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors group text-primary font-bold" data-path="combos-y-ofertas" href="#"><span class="material-symbols-outlined text-[22px]">local_offer</span><span class="font-label-sm text-label-sm mt-0.5">Ofertas</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors relative group" data-path="carrito" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">shopping_cart</span><span class="absolute -top-1.5 -right-2.5 px-1 min-w-[16px] h-4 bg-secondary text-on-secondary rounded-full font-label-sm text-[10px] leading-none flex items-center justify-center font-bold">2</span></div><span class="font-label-sm text-label-sm mt-0.5">Carrito</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors group" data-path="perfil" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm mt-0.5">Perfil</span></a></div></nav></body></html>
